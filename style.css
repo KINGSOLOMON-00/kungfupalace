@@ -794,30 +794,34 @@ img {
   .hero {
     height: auto !important;
     min-height: 50vh !important;
-    padding: 20px 15px !important;
+    padding: 30px 15px !important;
+    align-items: flex-start !important;
   }
 
-  /* Hide the food image inside hero */
-  .hero-image {
-    display: none !important;
+  /* Show hero text but hide only the floating food image */
+  .hero-text {
+    display: block !important;
+    z-index: 3 !important;
+    position: relative !important;
   }
 
-  /* Fix hero text */
   .hero-text h1 {
-    font-size: 1.4rem !important;
+    font-size: 1.6rem !important;
     line-height: 1.3 !important;
+    display: block !important;
   }
 
   .hero-text p {
     font-size: 0.9rem !important;
+    display: block !important;
   }
 
-  /* Fix navbar title cut off */
-  .navbar-brand span,
+  .hero-image {
+    display: none !important;
+  }
+
+  /* Fix navbar */
   .navbar-brand {
     font-size: 0.65rem !important;
-    white-space: nowrap;
-    overflow: hidden;
-    max-width: 180px;
   }
 }
