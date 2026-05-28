@@ -823,3 +823,47 @@ img {
     font-size: 0.65rem !important;
   }
 }
+@media (max-width: 768px) {
+
+  /* Collapse navbar on mobile */
+  .navbar-nav {
+    background: #1a1a1a;
+    padding: 10px;
+  }
+
+  /* Fix hero text position */
+  .hero {
+    height: auto !important;
+    min-height: 60vh !important;
+    padding: 80px 15px 30px 15px !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
+
+  .hero-text {
+    position: relative !important;
+    z-index: 10 !important;
+    margin-top: 20px !important;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem !important;
+    z-index: 10 !important;
+    position: relative !important;
+  }
+
+  .hero-text p {
+    font-size: 1rem !important;
+    z-index: 10 !important;
+    position: relative !important;
+  }
+
+  .hero-image {
+    display: none !important;
+  }
+
+  .hero::before {
+    background-color: rgba(0,0,0,0.5) !important;
+    z-index: 1 !important;
+  }
+}
