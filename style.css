@@ -520,6 +520,7 @@ body {
 }
 .menu-list-grid {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 50px 30px;
     background: #f9f9f9;
@@ -730,5 +731,27 @@ img {
 
   .menu-list-item p {
     font-size: 0.8rem;
+  }
+}
+@media (max-width: 768px) {
+
+  .menu-list-grid {
+    flex-direction: column !important;
+    padding: 20px 15px !important;
+    gap: 0px !important;
+  }
+
+  .menu-list-col {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .menu-list-item {
+    padding: 12px !important;
+  }
+
+  .menu-list-item img {
+    width: 55px !important;
+    height: 55px !important;
   }
 }
