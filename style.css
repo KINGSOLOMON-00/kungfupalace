@@ -790,37 +790,35 @@ img {
 }
 @media (max-width: 768px) {
 
-  /* Fix hero */
   .hero {
     height: auto !important;
-    min-height: 50vh !important;
+    min-height: 60vh !important;
     padding: 30px 15px !important;
-    align-items: flex-start !important;
-  }
-
-  /* Show hero text but hide only the floating food image */
-  .hero-text {
-    display: block !important;
-    z-index: 3 !important;
-    position: relative !important;
   }
 
   .hero-text h1 {
     font-size: 1.6rem !important;
-    line-height: 1.3 !important;
-    display: block !important;
+    z-index: 10 !important;
   }
 
   .hero-text p {
-    font-size: 0.9rem !important;
-    display: block !important;
+    font-size: 1rem !important;
+    z-index: 10 !important;
+  }
+
+  .hero-text {
+    z-index: 10 !important;
+    position: relative !important;
+  }
+
+  .hero::before {
+    background-color: rgba(0, 0, 0, 0.5) !important;
   }
 
   .hero-image {
     display: none !important;
   }
 
-  /* Fix navbar */
   .navbar-brand {
     font-size: 0.65rem !important;
   }
