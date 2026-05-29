@@ -10,26 +10,37 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-    <img src="FOOD_LOGO-removebg-preview (2).png" style="height:60px; border-radius:60%;">
-    KUNGFU PALACE CHINESE RESTAURANT
-</a>
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="FOOD LOGO-removebg-preview (2).png" style="height:60px; border-radius:6px">
+      KUNGFU PALACE CHINESE RESTAURANT
+    </a>
+
+    <!-- ADD THIS HAMBURGER BUTTON -->
+    <button class="navbar-toggler" type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- WRAP YOUR NAV LINKS IN THIS -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>
 <div class="hero">
   <div class="hero-text">
@@ -185,4 +196,5 @@
       </div>
     </div>
   </div>
-</section>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
